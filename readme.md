@@ -28,6 +28,11 @@ isSafeInteger(Infinity);
 ```
 
 
+## Related
+
+- [number-is-integer](https://github.com/sindresorhus/number-is-integer) - ES2015 `Number.isInteger()` ponyfill
+
+
 ## License
 
 MIT © [Sindre Sorhus](http://sindresorhus.com)

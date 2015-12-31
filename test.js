@@ -1,19 +1,18 @@
-'use strict';
-var test = require('ava');
-Number.isSafeInteger = undefined;
-var isSafeInteger = require('./');
+import test from 'ava';
 
-test(function (t) {
-	t.assert(isSafeInteger(3));
-	t.assert(isSafeInteger(-3));
-	t.assert(isSafeInteger(3.0));
-	t.assert(isSafeInteger(-3.0));
-	t.assert(isSafeInteger(Math.pow(2, 53) - 1));
-	t.assert(!isSafeInteger(Math.pow(2, 53)));
-	t.assert(!isSafeInteger(-Math.pow(2, 53)));
-	t.assert(!isSafeInteger(3.1));
-	t.assert(!isSafeInteger(NaN));
-	t.assert(!isSafeInteger(Infinity));
-	t.assert(!isSafeInteger('3'));
-	t.end();
+Number.isSafeInteger = undefined;
+const m = require('./');
+
+test(t => {
+	t.true(m(3));
+	t.true(m(-3));
+	t.true(m(3.0));
+	t.true(m(-3.0));
+	t.true(m(Math.pow(2, 53) - 1));
+	t.false(m(Math.pow(2, 53)));
+	t.false(m(-Math.pow(2, 53)));
+	t.false(m(3.1));
+	t.false(m(NaN));
+	t.false(m(Infinity));
+	t.false(m('3'));
 });

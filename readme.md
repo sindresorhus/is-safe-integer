@@ -1,6 +1,6 @@
 # is-safe-integer [![Build Status](https://travis-ci.org/sindresorhus/is-safe-integer.svg?branch=master)](https://travis-ci.org/sindresorhus/is-safe-integer)
 
-> ES6 [`Number.isSafeInteger()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger) ponyfill
+> ES2015 [`Number.isSafeInteger()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger) ponyfill
 
 > Ponyfill: A polyfill that doesn't overwrite the native method
 

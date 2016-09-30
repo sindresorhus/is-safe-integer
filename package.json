@@ -1,6 +1,6 @@
 {
   "name": "is-safe-integer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ES2015 Number.isSafeInteger() ponyfill",
   "license": "MIT",
   "repository": "sindresorhus/is-safe-integer",

@@ -1,3 +1,9 @@
+# Deprecated
+
+This package is no longer relevant as ES2015 support is widespread.
+
+---
+
 # is-safe-integer [![Build Status](https://travis-ci.org/sindresorhus/is-safe-integer.svg?branch=master)](https://travis-ci.org/sindresorhus/is-safe-integer)
 
 > ES2015 [`Number.isSafeInteger()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger) [ponyfill](https://ponyfill.com)
